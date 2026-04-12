@@ -14,8 +14,12 @@ const Index = () => {
       <section className="relative min-h-[90vh] flex items-center bg-solos-dark overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
-            alt="Empreendimento moderno"
+            src={heroImg}
+            alt="Empreendimento residencial moderno"
+            className="w-full h-full object-cover opacity-30"
+            width={1920}
+            height={1080}
+          />
             className="w-full h-full object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-solos-dark/90 via-solos-dark/70 to-transparent" />
