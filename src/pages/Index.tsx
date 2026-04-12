@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Target, Building2, TrendingUp, LayoutGrid, Search, BarChart3, Compass, Hammer, Handshake, Users } from "lucide-react";
 import heroImg from "@/assets/hero-residencial.jpg";
+import institucionalImg from "@/assets/institucional-solos.jpg";
 import { empreendimentos } from "@/data/empreendimentos";
 import EmpreendimentoCard from "@/components/EmpreendimentoCard";
 import ContactForm from "@/components/ContactForm";
@@ -147,7 +148,7 @@ const Index = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+                src={institucionalImg}
                 alt="Empreendimento moderno Solos"
                 className="w-full rounded-2xl shadow-2xl"
                 loading="lazy"

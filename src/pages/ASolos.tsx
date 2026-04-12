@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Shield, Brain, Target } from "lucide-react";
+import institucionalImg from "@/assets/institucional-solos.jpg";
 
 const ASolos = () => {
   return (
@@ -32,7 +33,7 @@ const ASolos = () => {
               </div>
             </div>
             <img
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
+              src={institucionalImg}
               alt="Empreendimento Solos"
               className="w-full rounded-2xl shadow-xl"
               loading="lazy"

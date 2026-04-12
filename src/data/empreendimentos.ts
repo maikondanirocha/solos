@@ -1,3 +1,8 @@
+import imgAlameda from "@/assets/emp-alameda-park.jpg";
+import imgVilla from "@/assets/emp-villa-serena.jpg";
+import imgPrime from "@/assets/emp-prime-central.jpg";
+import imgMonte from "@/assets/emp-monte-verde.jpg";
+
 export type EmpreendimentoStatus = "Lançamento" | "Em obras" | "Pronto" | "Pronto para construir";
 
 export interface Empreendimento {
@@ -27,12 +32,8 @@ export const empreendimentos: Empreendimento[] = [
     tipo: "Apartamento",
     resumo: "Apartamentos compactos com design inteligente e alto potencial de valorização.",
     descricao: "O Residencial Alameda Park foi projetado para oferecer o máximo de funcionalidade em cada metro quadrado. Com plantas otimizadas, áreas comuns pensadas para o dia a dia e localização estratégica, é a escolha ideal para quem busca moradia moderna ou investimento seguro.",
-    imagem: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
-    galeria: [
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=80",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80",
-    ],
+    imagem: imgAlameda,
+    galeria: [imgAlameda, imgVilla, imgMonte],
     metragem: "38m² a 62m²",
     padrao: "Médio-alto",
     diferenciais: ["Planta otimizada", "Área de lazer completa", "Vaga de garagem", "Próximo ao metrô", "Alto potencial de valorização"],
@@ -47,12 +48,8 @@ export const empreendimentos: Empreendimento[] = [
     tipo: "Casa",
     resumo: "Casas em condomínio fechado com arquitetura moderna e áreas verdes planejadas.",
     descricao: "O Villa Serena é um condomínio de casas que une segurança, conforto e contato com a natureza. Com projeto arquitetônico contemporâneo, cada unidade foi pensada para oferecer privacidade, funcionalidade e valorização contínua.",
-    imagem: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
-    galeria: [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
-    ],
+    imagem: imgVilla,
+    galeria: [imgVilla, imgAlameda, imgPrime],
     metragem: "120m² a 180m²",
     padrao: "Alto",
     diferenciais: ["Condomínio fechado", "Áreas verdes", "Arquitetura moderna", "Infraestrutura completa", "Segurança 24h"],
@@ -67,11 +64,8 @@ export const empreendimentos: Empreendimento[] = [
     tipo: "Lote",
     resumo: "Lotes urbanizados em localização privilegiada, prontos para construção imediata.",
     descricao: "O Loteamento Prime Central oferece lotes com infraestrutura completa em uma das regiões que mais cresce na cidade. Ideal para quem deseja construir com liberdade e investir em uma área de alta valorização.",
-    imagem: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
-    galeria: [
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80",
-      "https://images.unsplash.com/photo-1448630360428-65456659e5fc?w=1200&q=80",
-    ],
+    imagem: imgPrime,
+    galeria: [imgPrime, imgVilla],
     metragem: "200m² a 450m²",
     padrao: "Médio",
     diferenciais: ["Infraestrutura pronta", "Localização central", "Documentação regularizada", "Alta valorização", "Pronto para construir"],
@@ -86,11 +80,8 @@ export const empreendimentos: Empreendimento[] = [
     tipo: "Apartamento",
     resumo: "Empreendimento entregue com unidades prontas para morar, em região consolidada.",
     descricao: "O Residencial Monte Verde já foi entregue e conta com unidades disponíveis para ocupação imediata. Localizado em região nobre, oferece infraestrutura completa, acabamento de qualidade e excelente custo-benefício.",
-    imagem: "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=800&q=80",
-    galeria: [
-      "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=1200&q=80",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80",
-    ],
+    imagem: imgMonte,
+    galeria: [imgMonte, imgAlameda],
     metragem: "55m² a 78m²",
     padrao: "Médio-alto",
     diferenciais: ["Pronto para morar", "Região nobre", "Acabamento premium", "Área de lazer", "Portaria 24h"],
