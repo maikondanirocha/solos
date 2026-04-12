@@ -20,8 +20,6 @@ const Index = () => {
             width={1920}
             height={1080}
           />
-            className="w-full h-full object-cover opacity-30"
-          />
           <div className="absolute inset-0 bg-gradient-to-r from-solos-dark/90 via-solos-dark/70 to-transparent" />
         </div>
         <div className="relative container mx-auto px-4 lg:px-8 py-20">
