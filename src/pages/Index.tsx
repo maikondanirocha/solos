@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Target, Building2, TrendingUp, LayoutGrid, Search, BarChart3, Compass, Hammer, Handshake, Users } from "lucide-react";
+import heroImg from "@/assets/hero-residencial.jpg";
 import { empreendimentos } from "@/data/empreendimentos";
 import EmpreendimentoCard from "@/components/EmpreendimentoCard";
 import ContactForm from "@/components/ContactForm";
