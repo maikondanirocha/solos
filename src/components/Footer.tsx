@@ -14,9 +14,9 @@ const Footer = () => {
               Confiança, planejamento e inteligência em cada empreendimento.
             </p>
             <div className="flex gap-4 pt-2">
-              <a href="#" className="text-white/40 hover:text-primary transition-colors text-sm">Instagram</a>
-              <a href="#" className="text-white/40 hover:text-primary transition-colors text-sm">LinkedIn</a>
-              <a href="#" className="text-white/40 hover:text-primary transition-colors text-sm">Facebook</a>
+              <span className="text-white/40 text-sm">Instagram</span>
+              <span className="text-white/40 text-sm">LinkedIn</span>
+              <span className="text-white/40 text-sm">Facebook</span>
             </div>
           </div>
 
@@ -84,9 +84,9 @@ const Footer = () => {
           <p className="text-white/40 text-xs">
             © {new Date().getFullYear()} Solos Empreendimentos Imobiliários. Todos os direitos reservados. CNPJ: 00.000.000/0001-00
           </p>
-          <Link to="/politica-de-privacidade" className="text-white/40 hover:text-primary text-xs transition-colors">
+          <span className="text-white/40 text-xs">
             Política de Privacidade
-          </Link>
+          </span>
         </div>
       </div>
     </footer>
