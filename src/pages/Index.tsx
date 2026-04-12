@@ -148,7 +148,7 @@ const Index = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+                src={institucionalImg}
                 alt="Empreendimento moderno Solos"
                 className="w-full rounded-2xl shadow-2xl"
                 loading="lazy"

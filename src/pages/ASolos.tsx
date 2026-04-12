@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Shield, Brain, Target } from "lucide-react";
+import institucionalImg from "@/assets/institucional-solos.jpg";
 
 const ASolos = () => {
   return (
