@@ -1,34 +1,34 @@
+## Adicionar 2 novos empreendimentos: Residencial Jardim Flórida
 
+Cadastrar duas casas (projetos de Lançamento) no catálogo, usando as imagens 3D enviadas.
 
-## Plano: Corrigir navegação e links
+### Dados aplicados aos dois imóveis
+- **Nome:** Residencial Jardim Flórida (Casa 1 / Casa 2)
+- **Status:** Lançamento
+- **Tipo:** Casa
+- **Localização:** Loteamento Flórida – Bairro Warnow
+- **Cidade:** Indaial, SC
+- **Slug:** `residencial-jardim-florida-1` e `residencial-jardim-florida-2`
 
-### Problemas identificados
+### Mudanças técnicas
 
-1. **Páginas não rolam para o topo ao navegar** — React Router não faz scroll-to-top automaticamente. Ao navegar de uma página rolada, a próxima página abre na mesma posição de scroll.
-2. **Links mortos (`#`)** no Footer — Instagram, LinkedIn, Facebook apontam para `#`.
-3. **Rota inexistente** — Link "Política de Privacidade" no Footer aponta para `/politica-de-privacidade`, que não tem rota definida.
+1. **Copiar imagens** para `src/assets/`:
+   - `user-uploads://3d-2.jpeg` → `src/assets/emp-jardim-florida-1.jpg`
+   - `user-uploads://3d-3.jpeg` → `src/assets/emp-jardim-florida-2.jpg`
 
-### Correções
+2. **`src/data/empreendimentos.ts`** – adicionar 2 novos objetos no array `empreendimentos` (no topo, pois são lançamentos), com:
+   - `imagem` e `galeria` apontando para as novas imagens
+   - `resumo` e `descricao` em PT-BR descrevendo casas térreas modernas no Loteamento Flórida, em Warnow – Indaial/SC
+   - `metragem`: a confirmar (sugestão de placeholder: "60m² a 75m²")
+   - `padrao`: "Médio"
+   - `diferenciais`: ["Casa térrea", "Arquitetura moderna", "Acabamento de qualidade", "Quintal com gramado", "Bairro Warnow – Indaial/SC", "Pronta entrega prevista"]
+   - `destaque: true`
 
-| Arquivo | O que fazer |
-|---------|------------|
-| `src/components/ScrollToTop.tsx` | **Criar** componente que escuta mudanças de rota e faz `window.scrollTo(0, 0)` |
-| `src/App.tsx` | Adicionar `<ScrollToTop />` dentro do `<BrowserRouter>` |
-| `src/components/Footer.tsx` | Remover links de redes sociais mortos (ou substituir por placeholders visuais sem `href="#"`). Remover ou ajustar link de Política de Privacidade |
+3. Como `cidadeOptions` e `tipoOptions` são derivados automaticamente do array, "Indaial" passará a aparecer no filtro de cidades sem alterações adicionais.
 
-### Detalhes técnicos
+### Pontos a confirmar (posso seguir com placeholders se preferir)
+- Metragem real das unidades
+- Número de dormitórios / vagas
+- Existência de previsão de entrega ou data de lançamento
 
-**ScrollToTop** — componente padrão do React Router:
-```tsx
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
-  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
-  return null;
-};
-```
-
-Isso resolve o problema principal de navegação. Os links mortos serão limpos para evitar confusão.
-
+Confirme o plano (ou informe os dados acima) para eu implementar.
