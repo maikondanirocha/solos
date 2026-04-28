@@ -14,8 +14,14 @@ const Footer = () => {
               Confiança, planejamento e inteligência em cada empreendimento.
             </p>
             <div className="flex gap-4 pt-2">
-              <span className="text-white/40 text-sm">Instagram</span>
-              <span className="text-white/40 text-sm">LinkedIn</span>
+              <a
+                href="https://www.instagram.com/solos.empreendimentos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-primary transition-colors text-sm"
+              >
+                Instagram
+              </a>
               <span className="text-white/40 text-sm">Facebook</span>
             </div>
           </div>
