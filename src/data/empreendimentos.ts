@@ -1,4 +1,3 @@
-import imgPrime from "@/assets/emp-prime-central.jpg";
 import imgMonte from "@/assets/emp-monte-verde.jpg";
 import imgFlorida1 from "@/assets/emp-jardim-florida-1.jpg";
 import imgFlorida2 from "@/assets/emp-jardim-florida-2.jpg";
@@ -67,22 +66,6 @@ export const empreendimentos: Empreendimento[] = [
       "Loteamento Flórida — Warnow, Indaial/SC",
       "Projeto de lançamento",
     ],
-    destaque: true,
-  },
-  {
-    slug: "terreno-prime-central",
-    nome: "Loteamento Prime Central",
-    localizacao: "Centro Expandido",
-    cidade: "Anápolis",
-    status: "Pronto para construir",
-    tipo: "Lote",
-    resumo: "Lotes urbanizados em localização privilegiada, prontos para construção imediata.",
-    descricao: "O Loteamento Prime Central oferece lotes com infraestrutura completa em uma das regiões que mais cresce na cidade. Ideal para quem deseja construir com liberdade e investir em uma área de alta valorização.",
-    imagem: imgPrime,
-    galeria: [imgPrime],
-    metragem: "200m² a 450m²",
-    padrao: "Médio",
-    diferenciais: ["Infraestrutura pronta", "Localização central", "Documentação regularizada", "Alta valorização", "Pronto para construir"],
     destaque: true,
   },
   {
