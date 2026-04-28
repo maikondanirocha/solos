@@ -40,7 +40,7 @@ const Index = () => {
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a
-                href="https://wa.me/5562999999999"
+                href="https://wa.me/5547991783005"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-8 py-4 rounded-lg font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
