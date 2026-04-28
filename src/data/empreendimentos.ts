@@ -2,6 +2,8 @@ import imgAlameda from "@/assets/emp-alameda-park.jpg";
 import imgVilla from "@/assets/emp-villa-serena.jpg";
 import imgPrime from "@/assets/emp-prime-central.jpg";
 import imgMonte from "@/assets/emp-monte-verde.jpg";
+import imgFlorida1 from "@/assets/emp-jardim-florida-1.jpg";
+import imgFlorida2 from "@/assets/emp-jardim-florida-2.jpg";
 
 export type EmpreendimentoStatus = "Lançamento" | "Em obras" | "Pronto" | "Pronto para construir";
 
@@ -23,6 +25,52 @@ export interface Empreendimento {
 }
 
 export const empreendimentos: Empreendimento[] = [
+  {
+    slug: "residencial-jardim-florida-casa-1",
+    nome: "Residencial Jardim Flórida — Casa 1",
+    localizacao: "Loteamento Flórida, Bairro Warnow",
+    cidade: "Indaial",
+    status: "Lançamento",
+    tipo: "Casa",
+    resumo: "Casa térrea de arquitetura contemporânea no Loteamento Flórida, em Warnow.",
+    descricao: "O Residencial Jardim Flórida traz casas térreas com design moderno, fachada em volumes recortados e acabamento refinado. Localizada no Loteamento Flórida, bairro Warnow em Indaial/SC, a Casa 1 oferece amplos vidros, entrada destacada em madeira e quintal com gramado, unindo conforto, privacidade e excelente potencial de valorização.",
+    imagem: imgFlorida1,
+    galeria: [imgFlorida1, imgFlorida2],
+    metragem: "A confirmar",
+    padrao: "Médio",
+    diferenciais: [
+      "Casa térrea",
+      "Arquitetura contemporânea",
+      "Acabamento de qualidade",
+      "Quintal com gramado",
+      "Loteamento Flórida — Warnow, Indaial/SC",
+      "Projeto de lançamento",
+    ],
+    destaque: true,
+  },
+  {
+    slug: "residencial-jardim-florida-casa-2",
+    nome: "Residencial Jardim Flórida — Casa 2",
+    localizacao: "Loteamento Flórida, Bairro Warnow",
+    cidade: "Indaial",
+    status: "Lançamento",
+    tipo: "Casa",
+    resumo: "Casa térrea com fachada moderna e entrada em madeira no Loteamento Flórida, Warnow.",
+    descricao: "Segunda unidade do Residencial Jardim Flórida, esta casa térrea apresenta volumes arquitetônicos marcantes, porta de entrada em madeira natural e jardim frontal com paisagismo. Situada no Loteamento Flórida, bairro Warnow em Indaial/SC, é ideal para quem busca uma moradia moderna, funcional e em região em pleno desenvolvimento.",
+    imagem: imgFlorida2,
+    galeria: [imgFlorida2, imgFlorida1],
+    metragem: "A confirmar",
+    padrao: "Médio",
+    diferenciais: [
+      "Casa térrea",
+      "Fachada moderna",
+      "Porta de entrada em madeira",
+      "Paisagismo frontal",
+      "Loteamento Flórida — Warnow, Indaial/SC",
+      "Projeto de lançamento",
+    ],
+    destaque: true,
+  },
   {
     slug: "residencial-alameda-park",
     nome: "Residencial Alameda Park",
