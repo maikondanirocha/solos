@@ -46,7 +46,7 @@ const EmpreendimentoDetail = () => {
               <p className="text-white/70 text-lg leading-relaxed">{emp.descricao}</p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <a
-                  href="https://wa.me/5562999999999"
+                  href="https://wa.me/5547991783005"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3.5 rounded-lg font-medium hover:opacity-90 transition-opacity"
