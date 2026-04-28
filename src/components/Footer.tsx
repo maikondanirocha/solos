@@ -64,15 +64,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm text-white/60">
                 <Phone className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
-                <span>(62) 99999-9999</span>
+                <span>(47) 99178-3005</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-white/60">
                 <Mail className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
-                <span>contato@solosempreendimentos.com.br</span>
+                <span>solos.incorporadora@gmail.com</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-white/60">
                 <MapPin className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
-                <span>Goiânia, GO</span>
+                <span>Indaial, SC</span>
               </li>
             </ul>
           </div>
@@ -82,7 +82,7 @@ const Footer = () => {
       <div className="border-t border-white/10">
         <div className="container mx-auto px-4 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-xs">
-            © {new Date().getFullYear()} Solos Empreendimentos Imobiliários. Todos os direitos reservados. CNPJ: 00.000.000/0001-00
+            © {new Date().getFullYear()} Solos Empreendimentos Imobiliários. Todos os direitos reservados. CNPJ: 65.440.823/0001-83
           </p>
           <span className="text-white/40 text-xs">
             Política de Privacidade

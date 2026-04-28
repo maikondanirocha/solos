@@ -80,7 +80,7 @@ const Header = () => {
           </nav>
 
           <a
-            href="https://wa.me/5562999999999"
+            href="https://wa.me/5547991783005"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden lg:inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-accent transition-colors"
@@ -140,7 +140,7 @@ const Header = () => {
               )
             )}
             <a
-              href="https://wa.me/5562999999999"
+              href="https://wa.me/5547991783005"
               target="_blank"
               rel="noopener noreferrer"
               className="block text-center bg-primary text-primary-foreground px-5 py-3 rounded-lg text-sm font-medium mt-4"

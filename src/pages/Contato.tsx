@@ -22,10 +22,10 @@ const Contato = () => {
                 <h2 className="font-heading text-2xl mb-6">Nossos canais</h2>
                 <ul className="space-y-5">
                   {[
-                    { icon: MessageCircle, label: "WhatsApp", value: "(62) 99999-9999", href: "https://wa.me/5562999999999" },
-                    { icon: Phone, label: "Telefone", value: "(62) 99999-9999", href: "tel:+5562999999999" },
-                    { icon: Mail, label: "E-mail", value: "contato@solosempreendimentos.com.br", href: "mailto:contato@solosempreendimentos.com.br" },
-                    { icon: MapPin, label: "Endereço", value: "Goiânia, GO", href: "#" },
+                    { icon: MessageCircle, label: "WhatsApp", value: "(47) 99178-3005", href: "https://wa.me/5547991783005" },
+                    { icon: Phone, label: "Telefone", value: "(47) 99178-3005", href: "tel:+5547991783005" },
+                    { icon: Mail, label: "E-mail", value: "solos.incorporadora@gmail.com", href: "mailto:solos.incorporadora@gmail.com" },
+                    { icon: MapPin, label: "Endereço", value: "Indaial, SC", href: "#" },
                     { icon: Clock, label: "Horário", value: "Seg a Sex, 8h às 18h", href: "#" },
                   ].map((item) => (
                     <li key={item.label}>
