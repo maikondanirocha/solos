@@ -39,14 +39,6 @@ const Index = () => {
                 Ver empreendimentos
                 <ArrowRight className="w-4 h-4" />
               </Link>
-              <a
-                href="https://wa.me/5547991783005"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-8 py-4 rounded-lg font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
-              >
-                Falar com um especialista
-              </a>
             </div>
           </div>
         </div>
@@ -134,7 +126,7 @@ const Index = () => {
                 Uma empresa construída com propósito
               </h2>
               <p className="text-white/70 text-lg leading-relaxed">
-                A Solos nasceu de um sonho cultivado por mais de 10 anos. Sua história começa no desejo de contribuir com o planejamento das cidades e ajudar famílias a conquistarem a casa própria de forma acessível, planejada e inteligente.
+                A Solos nasceu de um sonho. Sua história começa no desejo de contribuir com o planejamento das cidades e ajudar famílias a conquistarem a casa própria de forma acessível, planejada e inteligente.
               </p>
               <p className="text-white/70 text-lg leading-relaxed">
                 Mais do que construir imóveis, a Solos quer desenvolver oportunidades reais de moradia, valorização e patrimônio.
