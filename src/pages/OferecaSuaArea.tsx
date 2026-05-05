@@ -1,6 +1,4 @@
-import ContactForm from "@/components/ContactForm";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import WhatsAppCTA from "@/components/WhatsAppCTA";
 
 const OferecaSuaArea = () => {
   return (
@@ -17,31 +15,13 @@ const OferecaSuaArea = () => {
       </section>
 
       <section className="py-20 lg:py-28">
-        <div className="container mx-auto px-4 lg:px-8 max-w-2xl">
-          <ContactForm
-            buttonText="Enviar proposta"
-            extraFields={
-              <div className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="cidade">Cidade</Label>
-                    <Input id="cidade" name="cidade" placeholder="Cidade da área" maxLength={100} />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="localizacao-area">Localização da área</Label>
-                    <Input id="localizacao-area" name="localizacao-area" placeholder="Bairro, referência" maxLength={200} />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="tamanho">Tamanho aproximado</Label>
-                  <Input id="tamanho" name="tamanho" placeholder="Ex: 5.000m², 2 hectares" maxLength={100} />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="arquivo">Documento ou imagem (opcional)</Label>
-                  <Input id="arquivo" name="arquivo" type="file" accept="image/*,.pdf,.doc,.docx" />
-                </div>
-              </div>
-            }
+        <div className="container mx-auto px-4 lg:px-8 max-w-2xl text-center space-y-6">
+          <p className="text-muted-foreground">
+            Fale diretamente com nossa equipe pelo WhatsApp. Conte sobre a localização, tamanho aproximado e características da área — analisamos cada oportunidade com atenção.
+          </p>
+          <WhatsAppCTA
+            message="Olá Solos! Tenho uma área com potencial e gostaria de conversar sobre uma possível parceria."
+            label="Apresentar minha área no WhatsApp"
           />
         </div>
       </section>

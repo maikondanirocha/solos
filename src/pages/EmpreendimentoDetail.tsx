@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { MapPin, ArrowLeft, Check, MessageCircle } from "lucide-react";
 import { empreendimentos } from "@/data/empreendimentos";
-import ContactForm from "@/components/ContactForm";
+import WhatsAppCTA from "@/components/WhatsAppCTA";
 import { useState } from "react";
 
 const EmpreendimentoDetail = () => {
@@ -25,6 +25,8 @@ const EmpreendimentoDetail = () => {
     "Pronto para construir": "bg-solos-dark text-white",
   };
 
+  const whatsAppMessage = `Olá Solos! Tenho interesse no empreendimento ${emp.nome} e gostaria de mais informações.`;
+
   return (
     <>
       {/* Header */}
@@ -46,7 +48,7 @@ const EmpreendimentoDetail = () => {
               <p className="text-white/70 text-lg leading-relaxed">{emp.descricao}</p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <a
-                  href="https://wa.me/5547991783005"
+                  href={`https://wa.me/5547991783005?text=${encodeURIComponent(whatsAppMessage)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3.5 rounded-lg font-medium hover:opacity-90 transition-opacity"
@@ -130,15 +132,17 @@ const EmpreendimentoDetail = () => {
         </div>
       </section>
 
-      {/* CTA + Form */}
+      {/* CTA WhatsApp */}
       <section id="solicitar" className="py-20 lg:py-28 bg-solos-dark text-white">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-2xl mx-auto text-center mb-10">
-            <h2 className="font-heading text-3xl md:text-4xl mb-4">Gostou deste empreendimento?</h2>
-            <p className="text-white/70">Entre em contato para mais informações, agendar uma visita ou falar com um especialista.</p>
-          </div>
-          <div className="max-w-2xl mx-auto bg-white text-foreground p-8 lg:p-10 rounded-2xl">
-            <ContactForm buttonText="Solicitar atendimento" />
+          <div className="max-w-2xl mx-auto text-center space-y-6">
+            <h2 className="font-heading text-3xl md:text-4xl">Gostou deste empreendimento?</h2>
+            <p className="text-white/70">
+              Fale agora com a Solos pelo WhatsApp para mais informações, agendar uma visita ou conversar com um especialista.
+            </p>
+            <div className="pt-2">
+              <WhatsAppCTA message={whatsAppMessage} label="Solicitar atendimento no WhatsApp" />
+            </div>
           </div>
         </div>
       </section>
