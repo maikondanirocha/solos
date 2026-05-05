@@ -1,6 +1,4 @@
-import ContactForm from "@/components/ContactForm";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import WhatsAppCTA from "@/components/WhatsAppCTA";
 
 const ParaCorretores = () => {
   return (
@@ -17,21 +15,13 @@ const ParaCorretores = () => {
       </section>
 
       <section className="py-20 lg:py-28">
-        <div className="container mx-auto px-4 lg:px-8 max-w-2xl">
-          <ContactForm
-            buttonText="Cadastrar como parceiro"
-            extraFields={
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="cidade">Cidade de atuação</Label>
-                  <Input id="cidade" name="cidade" placeholder="Onde você atua" maxLength={100} />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="creci">CRECI</Label>
-                  <Input id="creci" name="creci" placeholder="Número do CRECI" maxLength={20} />
-                </div>
-              </div>
-            }
+        <div className="container mx-auto px-4 lg:px-8 max-w-2xl text-center space-y-6">
+          <p className="text-muted-foreground">
+            Fale com nossa equipe pelo WhatsApp e nos conte sua cidade de atuação e CRECI. Vamos apresentar as oportunidades e formas de parceria com a Solos.
+          </p>
+          <WhatsAppCTA
+            message="Olá Solos! Sou corretor(a) e tenho interesse em ser parceiro da Solos."
+            label="Cadastrar como parceiro no WhatsApp"
           />
         </div>
       </section>
