@@ -4,7 +4,7 @@ import heroImg from "@/assets/hero-residencial.jpg";
 import institucionalImg from "@/assets/institucional-solos.jpg";
 import { empreendimentos } from "@/data/empreendimentos";
 import EmpreendimentoCard from "@/components/EmpreendimentoCard";
-import ContactForm from "@/components/ContactForm";
+import WhatsAppCTA from "@/components/WhatsAppCTA";
 
 const Index = () => {
   const destaques = empreendimentos.filter((e) => e.destaque).slice(0, 4);
@@ -235,7 +235,12 @@ const Index = () => {
                 Tire suas dúvidas, conheça nossos empreendimentos ou solicite atendimento personalizado.
               </p>
             </div>
-            <ContactForm showInteresse />
+            <div className="flex justify-center">
+              <WhatsAppCTA
+                message="Olá Solos! Gostaria de mais informações."
+                label="Conversar no WhatsApp"
+              />
+            </div>
           </div>
         </div>
       </section>
