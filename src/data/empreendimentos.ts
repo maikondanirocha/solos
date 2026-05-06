@@ -26,7 +26,7 @@ export interface Empreendimento {
 }
 
 const descricaoComum =
-  "Casa térrea de arquitetura contemporânea com 54,98 m² de área construída, distribuídos em sala, copa/cozinha, área de serviço, suíte, dormitório, dois banheiros (banheiro da suíte e outro banheiro social), circulação e uma vaga de veículo descoberta. Projeto assinado pela arquiteta Simone Warmeling (CAU A168891-0), localizado no Loteamento Flórida, bairro Warnow em Indaial/SC — região em pleno desenvolvimento, ideal para morar bem ou investir com segurança.";
+  "Casa térrea de arquitetura contemporânea com 54,98 m² de área construída, distribuídos em sala, copa/cozinha, área de serviço, suíte, dormitório, dois banheiros (banheiro da suíte e outro banheiro social), circulação e uma vaga de veículo descoberta. Projeto assinado pela arquiteta Simone Warmeling, localizado no Loteamento Flórida, bairro Warnow em Indaial/SC — região em pleno desenvolvimento, ideal para morar bem ou investir com segurança.";
 
 const diferenciaisComum = [
   "Área construída de 54,98 m²",
@@ -49,7 +49,7 @@ export const empreendimentos: Empreendimento[] = [
     resumo: "Casa térrea contemporânea de 54,98 m² no Loteamento Flórida, em Warnow.",
     descricao: descricaoComum,
     imagem: imgFlorida1,
-    galeria: [imgFlorida1, imgFloridaConjunto, imgFloridaFrontal, imgFlorida1Lateral, imgFlorida1Fundos],
+    galeria: [imgFlorida1, imgFloridaFrontal, imgFlorida1Lateral, imgFlorida1Fundos],
     metragem: "54,98 m²",
     diferenciais: diferenciaisComum,
     destaque: true,
@@ -64,7 +64,7 @@ export const empreendimentos: Empreendimento[] = [
     resumo: "Casa térrea contemporânea de 54,98 m² no Loteamento Flórida, em Warnow.",
     descricao: descricaoComum,
     imagem: imgFlorida2,
-    galeria: [imgFlorida2, imgFloridaConjunto, imgFloridaFrontal, imgFlorida2Lateral, imgFlorida2Fundos],
+    galeria: [imgFlorida2, imgFloridaFrontal, imgFlorida2Lateral, imgFlorida2Fundos],
     metragem: "54,98 m²",
     diferenciais: diferenciaisComum,
     destaque: true,
