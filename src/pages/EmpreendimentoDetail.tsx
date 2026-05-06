@@ -64,7 +64,7 @@ const EmpreendimentoDetail = () => {
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden">
-              <img src={emp.imagem} alt={emp.nome} className="w-full aspect-[4/3] object-contain bg-muted" />
+              <img src={emp.imagem} alt={emp.nome} className="w-full aspect-[4/3] object-cover" />
             </div>
           </div>
         </div>
