@@ -74,11 +74,10 @@ const EmpreendimentoDetail = () => {
       <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="font-heading text-3xl mb-8">Visão geral</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[
               { label: "Tipo", value: emp.tipo },
               { label: "Metragem", value: emp.metragem },
-              { label: "Padrão", value: emp.padrao },
               { label: "Status", value: emp.status },
             ].map((item) => (
               <div key={item.label} className="p-6 rounded-xl border border-border bg-card text-center">
