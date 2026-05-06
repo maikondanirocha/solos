@@ -1,5 +1,11 @@
 import imgFlorida1 from "@/assets/emp-jardim-florida-1.jpg";
 import imgFlorida2 from "@/assets/emp-jardim-florida-2.jpg";
+import imgFloridaConjunto from "@/assets/emp-jardim-florida-conjunto.jpg";
+import imgFloridaFrontal from "@/assets/emp-jardim-florida-frontal.jpg";
+import imgFlorida1Lateral from "@/assets/emp-jardim-florida-1-lateral.jpg";
+import imgFlorida2Lateral from "@/assets/emp-jardim-florida-2-lateral.jpg";
+import imgFlorida1Fundos from "@/assets/emp-jardim-florida-1-fundos.jpg";
+import imgFlorida2Fundos from "@/assets/emp-jardim-florida-2-fundos.jpg";
 
 export type EmpreendimentoStatus = "Lançamento" | "Em obras" | "Pronto" | "Pronto para construir";
 
@@ -15,10 +21,22 @@ export interface Empreendimento {
   imagem: string;
   galeria: string[];
   metragem: string;
-  padrao: string;
   diferenciais: string[];
   destaque: boolean;
 }
+
+const descricaoComum =
+  "Casa térrea de arquitetura contemporânea com 54,98 m² de área construída, distribuídos em sala, copa/cozinha, área de serviço, suíte, dormitório, dois banheiros (banheiro da suíte e outro banheiro social), circulação e uma vaga de veículo descoberta. Projeto assinado pela arquiteta Simone Warmeling (CAU A168891-0), localizado no Loteamento Flórida, bairro Warnow em Indaial/SC — região em pleno desenvolvimento, ideal para morar bem ou investir com segurança.";
+
+const diferenciaisComum = [
+  "Área construída de 54,98 m²",
+  "1 suíte + 1 dormitório",
+  "2 banheiros (banheiro da suíte e outro banheiro social)",
+  "Sala, copa/cozinha e área de serviço",
+  "1 vaga de veículo descoberta",
+  "Projeto da arquiteta Simone Warmeling",
+  "Loteamento Flórida — Warnow, Indaial/SC",
+];
 
 export const empreendimentos: Empreendimento[] = [
   {
@@ -28,20 +46,12 @@ export const empreendimentos: Empreendimento[] = [
     cidade: "Indaial",
     status: "Lançamento",
     tipo: "Casa",
-    resumo: "Casa térrea de arquitetura contemporânea no Loteamento Flórida, em Warnow.",
-    descricao: "O Residencial Jardim Flórida traz casas térreas com design moderno, fachada em volumes recortados e acabamento refinado. Localizada no Loteamento Flórida, bairro Warnow em Indaial/SC, a Casa 1 oferece amplos vidros, entrada destacada em madeira e quintal com gramado, unindo conforto, privacidade e excelente potencial de valorização.",
+    resumo: "Casa térrea contemporânea de 54,98 m² no Loteamento Flórida, em Warnow.",
+    descricao: descricaoComum,
     imagem: imgFlorida1,
-    galeria: [imgFlorida1, imgFlorida2],
-    metragem: "A confirmar",
-    padrao: "Médio",
-    diferenciais: [
-      "Casa térrea",
-      "Arquitetura contemporânea",
-      "Acabamento de qualidade",
-      "Quintal com gramado",
-      "Loteamento Flórida — Warnow, Indaial/SC",
-      "Projeto de lançamento",
-    ],
+    galeria: [imgFlorida1, imgFloridaConjunto, imgFloridaFrontal, imgFlorida1Lateral, imgFlorida1Fundos],
+    metragem: "54,98 m²",
+    diferenciais: diferenciaisComum,
     destaque: true,
   },
   {
@@ -51,20 +61,12 @@ export const empreendimentos: Empreendimento[] = [
     cidade: "Indaial",
     status: "Lançamento",
     tipo: "Casa",
-    resumo: "Casa térrea com fachada moderna e entrada em madeira no Loteamento Flórida, Warnow.",
-    descricao: "Segunda unidade do Residencial Jardim Flórida, esta casa térrea apresenta volumes arquitetônicos marcantes, porta de entrada em madeira natural e jardim frontal com paisagismo. Situada no Loteamento Flórida, bairro Warnow em Indaial/SC, é ideal para quem busca uma moradia moderna, funcional e em região em pleno desenvolvimento.",
+    resumo: "Casa térrea contemporânea de 54,98 m² no Loteamento Flórida, em Warnow.",
+    descricao: descricaoComum,
     imagem: imgFlorida2,
-    galeria: [imgFlorida2, imgFlorida1],
-    metragem: "A confirmar",
-    padrao: "Médio",
-    diferenciais: [
-      "Casa térrea",
-      "Fachada moderna",
-      "Porta de entrada em madeira",
-      "Paisagismo frontal",
-      "Loteamento Flórida — Warnow, Indaial/SC",
-      "Projeto de lançamento",
-    ],
+    galeria: [imgFlorida2, imgFloridaConjunto, imgFloridaFrontal, imgFlorida2Lateral, imgFlorida2Fundos],
+    metragem: "54,98 m²",
+    diferenciais: diferenciaisComum,
     destaque: true,
   },
 ];
