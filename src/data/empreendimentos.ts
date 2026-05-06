@@ -1,4 +1,3 @@
-import imgMonte from "@/assets/emp-monte-verde.jpg";
 import imgFlorida1 from "@/assets/emp-jardim-florida-1.jpg";
 import imgFlorida2 from "@/assets/emp-jardim-florida-2.jpg";
 
