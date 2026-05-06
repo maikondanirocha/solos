@@ -68,22 +68,6 @@ export const empreendimentos: Empreendimento[] = [
     ],
     destaque: true,
   },
-  {
-    slug: "residencial-monte-verde",
-    nome: "Residencial Monte Verde",
-    localizacao: "Setor Bueno",
-    cidade: "Goiânia",
-    status: "Pronto",
-    tipo: "Apartamento",
-    resumo: "Empreendimento entregue com unidades prontas para morar, em região consolidada.",
-    descricao: "O Residencial Monte Verde já foi entregue e conta com unidades disponíveis para ocupação imediata. Localizado em região nobre, oferece infraestrutura completa, acabamento de qualidade e excelente custo-benefício.",
-    imagem: imgMonte,
-    galeria: [imgMonte],
-    metragem: "55m² a 78m²",
-    padrao: "Médio-alto",
-    diferenciais: ["Pronto para morar", "Região nobre", "Acabamento premium", "Área de lazer", "Portaria 24h"],
-    destaque: false,
-  },
 ];
 
 export const statusOptions: EmpreendimentoStatus[] = ["Lançamento", "Em obras", "Pronto", "Pronto para construir"];
