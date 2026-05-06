@@ -19,7 +19,7 @@ const EmpreendimentoCard = ({ emp }: { emp: Empreendimento }) => {
         <img
           src={emp.imagem}
           alt={emp.nome}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-contain bg-muted group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
         />
         <span className={`absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-medium ${statusColors[emp.status] || "bg-muted text-foreground"}`}>

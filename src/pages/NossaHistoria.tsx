@@ -11,7 +11,7 @@ const NossaHistoria = () => {
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
           <div className="space-y-8">
-            <div className="relative pl-8 border-l-2 border-primary/30 space-y-8">
+            <div className="relative pl-12 border-l-2 border-primary/30 space-y-8">
               <div className="relative">
                 <div className="absolute -left-[calc(0.5rem+1px)] top-1 w-4 h-4 rounded-full bg-primary" />
                 <h2 className="font-heading text-2xl mb-3">O sonho</h2>
