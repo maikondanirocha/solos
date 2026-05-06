@@ -64,7 +64,7 @@ const EmpreendimentoDetail = () => {
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden">
-              <img src={emp.imagem} alt={emp.nome} className="w-full aspect-[4/3] object-cover" />
+              <img src={emp.imagem} alt={emp.nome} className="w-full aspect-[4/3] object-contain bg-muted" />
             </div>
           </div>
         </div>
@@ -97,7 +97,7 @@ const EmpreendimentoDetail = () => {
             <img
               src={emp.galeria[activeImage]}
               alt={`${emp.nome} - imagem ${activeImage + 1}`}
-              className="w-full aspect-[16/9] object-cover rounded-xl"
+              className="w-full aspect-[16/9] object-contain bg-muted rounded-xl"
             />
             <div className="flex gap-3 overflow-x-auto pb-2">
               {emp.galeria.map((img, i) => (
