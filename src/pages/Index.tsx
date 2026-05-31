@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Target, Building2, TrendingUp, LayoutGrid, Search, BarChart3, Compass, Hammer, Handshake, Users } from "lucide-react";
 import heroImg from "@/assets/hero-residencial.jpg";
 import institucionalImg from "@/assets/institucional-solos.jpg";
+import casaModernaImg from "@/assets/casa-moderna-solos.png";
 import { empreendimentos } from "@/data/empreendimentos";
 import EmpreendimentoCard from "@/components/EmpreendimentoCard";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
@@ -140,7 +141,7 @@ const Index = () => {
             </div>
             <div className="relative">
               <img
-                src={institucionalImg}
+                src={casaModernaImg}
                 alt="Empreendimento moderno Solos"
                 className="w-full rounded-2xl shadow-2xl"
                 loading="lazy"
