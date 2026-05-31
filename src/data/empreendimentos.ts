@@ -7,6 +7,7 @@ import imgFlorida2Lateral from "@/assets/emp-jardim-florida-2-lateral.jpg";
 import imgFlorida1Fundos from "@/assets/emp-jardim-florida-1-fundos.jpg";
 import imgFlorida2Fundos from "@/assets/emp-jardim-florida-2-fundos.jpg";
 import imgFlorida1Cercado from "@/assets/emp-jardim-florida-1-cercado.jpg";
+import imgFlorida2Cercado from "@/assets/emp-jardim-florida-2-cercado.jpg";
 
 export type EmpreendimentoStatus = "Lançamento" | "Em obras" | "Pronto" | "Pronto para construir";
 
@@ -65,7 +66,7 @@ export const empreendimentos: Empreendimento[] = [
     resumo: "Casa térrea contemporânea de 54,98 m² no Loteamento Flórida, em Warnow.",
     descricao: descricaoComum,
     imagem: imgFlorida2,
-    galeria: [imgFlorida2, imgFloridaFrontal, imgFlorida2Lateral, imgFlorida2Fundos],
+    galeria: [imgFlorida2, imgFloridaFrontal, imgFlorida2Cercado, imgFlorida2Lateral, imgFlorida2Fundos],
     metragem: "54,98 m²",
     diferenciais: diferenciaisComum,
     destaque: true,
