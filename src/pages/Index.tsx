@@ -145,10 +145,6 @@ const Index = () => {
                 className="w-full rounded-2xl shadow-2xl"
                 loading="lazy"
               />
-              <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 rounded-xl shadow-lg hidden lg:block">
-                <p className="font-heading text-3xl">+10</p>
-                <p className="text-sm">anos de planejamento</p>
-              </div>
             </div>
           </div>
         </div>
