@@ -1,47 +1,35 @@
-## Objetivo
+# Nova proposta de layout — Solos
 
-Remover todos os formulários de contato do site e substituí-los por um botão CTA que abre o WhatsApp (47 99178-3005) com uma mensagem pré-preenchida relacionada ao contexto da página.
+Mesma estrutura de páginas, mesmas rotas e mesmos conteúdos. Muda apenas a linguagem visual: paleta, composição e ritmo das seções.
 
-## Páginas afetadas e mensagens
+## Direção visual escolhida
 
-| Página | Mensagem pré-preenchida no WhatsApp |
-|---|---|
-| `Contato.tsx` | "Olá Solos! Gostaria de mais informações." |
-| `EmpreendimentoDetail.tsx` | "Olá Solos! Tenho interesse no empreendimento {nome} e gostaria de mais informações." |
-| `OferecaSuaArea.tsx` | "Olá Solos! Tenho uma área com potencial e gostaria de conversar sobre uma possível parceria." |
-| `ParaCorretores.tsx` | "Olá Solos! Sou corretor(a) e tenho interesse em ser parceiro da Solos." |
+- Paleta: dourado #CCA85B sobre verde profundo #1F3A32, fundo escuro #0F1714 e claro #EFEFEF.
+- Tipografia: Instrument Serif (títulos) + Work Sans (texto) — mantida.
+- Estrutura: seções largas full-bleed, empilhadas, com alternância entre faixas claras e faixas verde-escuras.
 
-## Implementação
+## O que muda em cada página
 
-1. **Criar componente reutilizável** `src/components/WhatsAppCTA.tsx`
-   - Props: `message: string`, `label?: string` (padrão "Falar no WhatsApp"), variante de estilo opcional (claro/escuro).
-   - Gera o link `https://wa.me/5547991783005?text=` + `encodeURIComponent(message)`.
-   - Visual: botão grande verde WhatsApp (#25D366) com ícone `MessageCircle`, abre em nova aba.
+**Home**
+- Hero full-bleed com imagem em altura total, overlay verde profundo, título serifado grande alinhado à esquerda e uma linha dourada fina como assinatura.
+- Destaques em faixa clara, cards mais limpos (sem sombra pesada, borda fina e hover dourado).
+- "Por que a Solos" em faixa verde escura, ícones dourados em linha, sem caixas.
+- Bloco institucional com imagem sangrando até a borda da tela.
+- "Como trabalhamos" como lista numerada em faixa clara, numeração serifada grande em dourado.
+- Parceiros e contato em faixa final escura com CTA WhatsApp em destaque.
 
-2. **Atualizar `Contato.tsx`**
-   - Remover `<ContactForm />` e o título "Envie sua mensagem".
-   - Reorganizar layout: cartão central com canais de contato + bloco CTA grande do WhatsApp.
+**Demais páginas** (A Solos, Nossa História, Como Trabalhamos, Empreendimentos, Detalhe, Ofereça sua Área, Para Corretores, Contato)
+- Cabeçalho de página em faixa verde profunda com título serifado e subtítulo, substituindo o atual bloco cinza.
+- Alternância clara/escura entre seções, mesma grade e mesmos textos.
+- Cards de empreendimento e galeria mantêm o comportamento atual de imagem (zoom da listagem preservado, galeria em object-contain).
 
-3. **Atualizar `EmpreendimentoDetail.tsx`**
-   - Remover seção `#solicitar` com `<ContactForm />`.
-   - Substituir por seção CTA com texto motivacional + botão WhatsApp passando o nome do empreendimento na mensagem.
-   - Manter âncora `#solicitar` para o link "Solicitar informações" no header continuar funcionando.
-
-4. **Atualizar `OferecaSuaArea.tsx`**
-   - Remover `<ContactForm />` e campos extras (cidade, área, tamanho, arquivo).
-   - Substituir por bloco CTA WhatsApp com a mensagem da tabela.
-
-5. **Atualizar `ParaCorretores.tsx`**
-   - Remover `<ContactForm />` e campos extras (cidade, CRECI).
-   - Substituir por bloco CTA WhatsApp com a mensagem da tabela.
-
-6. **Limpeza**
-   - Remover o arquivo `src/components/ContactForm.tsx` (não terá mais usos).
-   - Remover imports órfãos de `Input`, `Label`, `ContactForm` nas páginas.
+**Header / Footer**
+- Header transparente sobre o hero e sólido ao rolar; logo no tamanho atual.
+- Footer em verde profundo com divisórias douradas finas.
 
 ## Detalhes técnicos
 
-- Número WhatsApp: `5547991783005` (já usado em `WhatsAppButton.tsx`).
-- URL pattern: `https://wa.me/5547991783005?text={encoded}`.
-- `target="_blank"` e `rel="noopener noreferrer"` em todos os links.
-- Manter botão flutuante `WhatsAppButton` global como está.
+- Atualizar tokens HSL em `src/index.css` (background, foreground, primary, secondary, muted, card, border) e cores nomeadas em `tailwind.config.ts` (`solos-dark` passa a verde profundo, adicionar `solos-green`/`solos-cream`).
+- Reescrever apenas o markup de apresentação das páginas em `src/pages/*` e dos componentes `Header`, `Footer`, `EmpreendimentoCard`, `WhatsAppCTA`.
+- Nenhuma alteração em `src/data/empreendimentos.ts`, rotas, imagens ou lógica.
+- Sem cores hardcoded: tudo via tokens semânticos.
