@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Target, Building2, TrendingUp, LayoutGrid, Search, BarChart3, Compass, Hammer, Handshake, Users } from "lucide-react";
-import heroImg from "@/assets/hero-residencial.jpg";
+import heroImg from "@/assets/hero-solos-capa.jpg";
 import institucionalImg from "@/assets/institucional-solos.jpg";
 import casaModernaImg from "@/assets/casa-moderna-solos.png";
 import { empreendimentos } from "@/data/empreendimentos";
